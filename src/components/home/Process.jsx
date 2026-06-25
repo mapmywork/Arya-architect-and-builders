@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 
 const steps = [
-  { id: '01', title: 'Consultation', desc: 'Understanding your vision and requirements.' },
-  { id: '02', title: 'Site Visit', desc: 'Analyzing the location and spatial constraints.' },
-  { id: '03', title: 'Planning', desc: 'Creating initial drafts and 2D floor plans.' },
-  { id: '04', title: '3D Visualization', desc: 'Bringing the plan to life with 3D renders.' },
-  { id: '05', title: 'Construction Drawings', desc: 'Detailed blueprints for the execution.' },
-  { id: '06', title: 'Project Delivery', desc: 'Finalizing and handing over the design.' }
+  { id: '01', title: 'परामर्श', desc: 'आपके दृष्टिकोण और आवश्यकताओं को समझना।' },
+  { id: '02', title: 'साइट विजिट', desc: 'स्थान और स्थानिक बाधाओं का विश्लेषण करना।' },
+  { id: '03', title: 'योजना', desc: 'प्रारंभिक ड्राफ्ट और 2D फ्लोर प्लान बनाना।' },
+  { id: '04', title: '3D विज़ुअलाइज़ेशन', desc: '3D रेंडर के साथ योजना को जीवंत करना।' },
+  { id: '05', title: 'निर्माण ड्राइंग', desc: 'निष्पादन के लिए विस्तृत ब्लूप्रिंट।' },
+  { id: '06', title: 'प्रोजेक्ट डिलीवरी', desc: 'डिज़ाइन को अंतिम रूप देना और सौंपना।' }
 ]
 
 const Process = () => {
@@ -15,10 +15,10 @@ const Process = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Our Working <span className="text-accent italic font-light">Process</span>
+            हमारी कार्य <span className="text-accent italic font-light">प्रक्रिया</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto">
-            A systematic and transparent approach to ensure your project goes from concept to reality smoothly.
+            आपका प्रोजेक्ट सुचारू रूप से पूरा हो, यह सुनिश्चित करने के लिए एक व्यवस्थित और पारदर्शी दृष्टिकोण।
           </p>
         </div>
 

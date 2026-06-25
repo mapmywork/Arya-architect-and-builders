@@ -13,7 +13,7 @@ const Footer = () => {
               ARYA<span className="text-accent">.</span>
             </a>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Premium architecture and interior design studio based in Panna, MP. We transform ideas into timeless spaces with precision and creativity.
+              पन्ना, मध्य प्रदेश में स्थित प्रीमियम आर्किटेक्चर और इंटीरियर डिज़ाइन स्टूडियो। हम सटीकता और रचनात्मकता के साथ विचारों को शानदार स्थानों में बदलते हैं।
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors">
@@ -33,12 +33,19 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-heading font-semibold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-heading font-semibold mb-6">क्विक लिंक्स</h4>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Services', 'Portfolio', 'Process', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="text-white/60 hover:text-accent transition-colors text-sm">
-                    {link}
+              {[
+                { name: 'होम', id: 'home' }, 
+                { name: 'हमारे बारे में', id: 'about' }, 
+                { name: 'सेवाएं', id: 'services' }, 
+                { name: 'पोर्टफोलियो', id: 'projects' }, 
+                { name: 'प्रक्रिया', id: 'process' }, 
+                { name: 'संपर्क करें', id: 'contact' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <a href={`#${link.id}`} className="text-white/60 hover:text-accent transition-colors text-sm">
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -47,9 +54,9 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-heading font-semibold mb-6">Our Services</h4>
+            <h4 className="text-lg font-heading font-semibold mb-6">हमारी सेवाएं</h4>
             <ul className="space-y-3">
-              {['Architectural Planning', 'Interior Design', '3D Elevation', 'Commercial Design', 'Turnkey Projects'].map((service) => (
+              {['आर्किटेक्चरल प्लानिंग', 'इंटीरियर डिज़ाइन', '3D एलिवेशन', 'कमर्शियल डिज़ाइन', 'टर्नकी प्रोजेक्ट्स'].map((service) => (
                 <li key={service}>
                   <a href="#services" className="text-white/60 hover:text-accent transition-colors text-sm">
                     {service}
@@ -61,18 +68,18 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-lg font-heading font-semibold mb-6">Newsletter</h4>
+            <h4 className="text-lg font-heading font-semibold mb-6">न्यूज़लेटर</h4>
             <p className="text-white/60 text-sm mb-4">
-              Subscribe to get the latest updates and design inspirations.
+              नवीनतम अपडेट और डिज़ाइन प्रेरणा प्राप्त करने के लिए सदस्यता लें।
             </p>
             <form className="flex gap-2">
               <input 
                 type="email" 
-                placeholder="Email Address" 
+                placeholder="ईमेल एड्रेस" 
                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors"
               />
               <button type="submit" className="px-4 py-2 bg-accent text-white rounded-lg hover:bg-white hover:text-primary transition-colors text-sm font-medium">
-                Subscribe
+                सब्सक्राइब करें
               </button>
             </form>
           </div>
@@ -82,7 +89,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            &copy; 2026 www.nakshewala.xyz. All rights reserved.
+            &copy; 2026 www.nakshewala.xyz. सर्वाधिकार सुरक्षित।
           </p>
           <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors text-white/40 hover:text-white group">
             <ArrowUp size={18} className="group-hover:-translate-y-1 transition-transform" />

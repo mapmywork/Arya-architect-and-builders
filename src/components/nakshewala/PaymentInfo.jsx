@@ -8,11 +8,11 @@ const PaymentInfo = () => {
         <div className="flex flex-col items-center text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">Secure Checkout</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">सुरक्षित भुगतान</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-            Payment <span className="text-secondary font-light italic">Details</span>
+            भुगतान <span className="text-secondary font-light italic">विवरण</span>
           </h2>
         </div>
 
@@ -31,8 +31,8 @@ const PaymentInfo = () => {
                 <Wallet size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-heading font-bold text-primary">UPI Payment</h3>
-                <p className="text-secondary text-sm">Fast & Secure</p>
+                <h3 className="text-xl font-heading font-bold text-primary">UPI भुगतान</h3>
+                <p className="text-secondary text-sm">तेज और सुरक्षित</p>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ const PaymentInfo = () => {
                 <p className="font-mono text-lg font-bold text-primary">9179868594@ybl</p>
               </div>
               <div className="bg-background rounded-xl p-4 border border-black/5">
-                <p className="text-sm text-secondary mb-1">Banker Name</p>
+                <p className="text-sm text-secondary mb-1">बैंक खाते का नाम</p>
                 <p className="font-heading font-bold text-primary">SAHAYATA SUTRAKAR</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ const PaymentInfo = () => {
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3">
               <AlertCircle size={20} className="text-amber-500 shrink-0 mt-0.5" />
               <p className="text-sm text-amber-800 leading-relaxed font-medium">
-                Note: यदि UPI से payment नहीं हो पा रही है तो QR code से payment करें या नंबर पर payment करें।
+                नोट: यदि UPI से payment नहीं हो पा रही है तो QR code से payment करें या नंबर पर payment करें।
               </p>
             </div>
           </motion.div>
@@ -64,17 +64,17 @@ const PaymentInfo = () => {
           >
             <a href="upi://pay?pa=9179868594@ybl&pn=SAHAYATA%20SUTRAKAR" className="flex items-center justify-center gap-3 w-full px-8 py-5 bg-primary text-white rounded-2xl font-bold text-lg hover:bg-accent transition-colors shadow-lg hover:shadow-accent/20 group">
               <QrCode size={24} className="group-hover:scale-110 transition-transform" />
-              Pay Now
+              अभी भुगतान करें
             </a>
 
-            <a href="https://wa.me/9179868594" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 w-full px-8 py-5 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-lg hover:bg-[#25D366] hover:text-white transition-colors group">
+            <a href="https://wa.me/9179868594?text=मैंने%20पेमेंट%20कर%20दिया%20है,%20यह%20रहा%20स्क्रीनशॉट।" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 w-full px-8 py-5 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-lg hover:bg-[#25D366] hover:text-white transition-colors group">
               <MessageCircle size={24} className="group-hover:scale-110 transition-transform" />
-              Send WhatsApp
+              पेमेंट का स्क्रीनशॉट WhatsApp पर भेजें
             </a>
 
             <button className="flex items-center justify-center gap-3 w-full px-8 py-5 bg-white text-primary border-2 border-primary/10 rounded-2xl font-bold text-lg hover:border-primary transition-colors group mt-4">
               <Send size={24} className="text-accent group-hover:-translate-y-1 transition-transform" />
-              Submit Details
+              विवरण सबमिट करें
             </button>
           </motion.div>
         </div>

@@ -3,33 +3,33 @@ import { ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    title: 'Architectural Planning',
-    description: 'Comprehensive 2D and 3D planning focusing on spatial optimization and structural integrity.',
+    title: 'आर्किटेक्चरल प्लानिंग',
+    description: 'स्थान के अनुकूलन और संरचनात्मक मजबूती पर ध्यान केंद्रित करते हुए व्यापक 2D और 3D प्लानिंग।',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop'
   },
   {
-    title: '3D Elevation Design',
-    description: 'Realistic 3D visualizations bringing your architectural concepts to life before construction.',
+    title: '3D एलिवेशन डिज़ाइन',
+    description: 'निर्माण से पहले आपके आर्किटेक्चरल कॉन्सेप्ट्स को जीवंत करने वाले यथार्थवादी 3D विज़ुअलाइज़ेशन।',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Interior Design',
-    description: 'Luxury interior solutions tailored to reflect your lifestyle and enhance living experiences.',
+    title: 'इंटीरियर डिज़ाइन',
+    description: 'आपकी जीवनशैली को दर्शाने और रहने के अनुभव को बेहतर बनाने के लिए लक्ज़री इंटीरियर समाधान।',
     image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop'
   },
   {
-    title: 'Front Elevation',
-    description: 'Striking facade designs that create lasting first impressions for residential and commercial properties.',
+    title: 'फ्रंट एलिवेशन',
+    description: 'आवासीय और व्यावसायिक संपत्तियों के लिए शानदार अग्रभाग (facade) डिज़ाइन जो स्थायी प्रभाव छोड़ते हैं।',
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop'
   },
   {
-    title: 'Construction Consultancy',
-    description: 'Expert guidance and supervision to ensure quality, safety, and timely project delivery.',
+    title: 'निर्माण परामर्श',
+    description: 'गुणवत्ता, सुरक्षा और समय पर प्रोजेक्ट पूरा करने के लिए विशेषज्ञ मार्गदर्शन और पर्यवेक्षण।',
     image: 'https://images.unsplash.com/photo-1541888086225-ebbc89b60b42?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Turnkey Solutions',
-    description: 'End-to-end project management from initial design to final handover with uncompromising quality.',
+    title: 'टर्नकी समाधान',
+    description: 'शुरुआती डिज़ाइन से लेकर अंतिम हैंडओवर तक संपूर्ण प्रोजेक्ट मैनेजमेंट, बिना किसी समझौते के।',
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356fce?q=80&w=2070&auto=format&fit=crop'
   }
 ]
@@ -57,14 +57,14 @@ const Services = () => {
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[2px] bg-accent"></div>
-              <span className="text-accent font-medium tracking-widest uppercase text-sm">Our Expertise</span>
+              <span className="text-accent font-medium tracking-widest uppercase text-sm">हमारी विशेषज्ञता</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              Comprehensive <span className="text-white/60 font-light italic">Solutions</span>
+              संपूर्ण <span className="text-white/60 font-light italic">समाधान</span>
             </h2>
           </div>
           <a href="#contact" className="hidden md:flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Discuss Your Project
+            अपना प्रोजेक्ट डिस्कस करें
           </a>
         </div>
 
@@ -109,7 +109,7 @@ const Services = () => {
         
         <div className="mt-12 md:hidden">
            <a href="#contact" className="flex items-center justify-center w-full gap-2 px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Discuss Your Project
+            अपना प्रोजेक्ट डिस्कस करें
           </a>
         </div>
       </div>

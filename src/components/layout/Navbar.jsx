@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Phone } from 'lucide-react'
 
+const navItems = [
+  { label: 'प्रोजेक्ट्स', href: '#projects' },
+  { label: 'सेवाएं', href: '#services' },
+  { label: 'हमारे बारे में', href: '#about' },
+  { label: 'प्रक्रिया', href: '#process' },
+  { label: 'संपर्क करें', href: '#contact' },
+]
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -32,15 +40,15 @@ const Navbar = () => {
 
         {/* Center Links */}
         <nav className="hidden lg:flex items-center gap-8">
-          {['Projects', 'Services', 'About', 'Process', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className={`text-sm font-medium transition-colors hover:text-accent relative group ${
                 isScrolled ? 'text-secondary hover:text-primary' : 'text-white/80 hover:text-white'
               }`}
             >
-              {item}
+              {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
@@ -61,7 +69,7 @@ const Navbar = () => {
             href="#contact"
             className="px-6 py-2.5 bg-accent text-white text-sm font-medium rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-accent/20"
           >
-            Get Quote
+            कोटेशन प्राप्त करें
           </a>
         </div>
 

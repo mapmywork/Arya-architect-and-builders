@@ -13,10 +13,14 @@ import Contact from '../components/home/Contact'
 import Engineers from '../components/nakshewala/Engineers'
 import PricingCalculator from '../components/nakshewala/PricingCalculator'
 import PaymentInfo from '../components/nakshewala/PaymentInfo'
+import InitialPopup from '../components/home/InitialPopup'
+import FloatingButtons from '../components/layout/FloatingButtons'
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-background">
+      <InitialPopup />
+      <FloatingButtons />
       <Navbar />
       <main>
         <Hero />

@@ -14,19 +14,22 @@ const About = () => {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">About Us</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">हमारे बारे में</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-8">
-            Crafting Beautiful Spaces Through <span className="text-secondary font-light italic">Modern Architecture</span>
+            आधुनिक आर्किटेक्चर के माध्यम से <span className="text-secondary font-light italic">खूबसूरत जगहों का निर्माण</span>
           </h2>
           
+          <p className="text-secondary text-lg leading-relaxed mb-6 max-w-lg">
+            आर्या आर्किटेक्ट और बिल्डर (ARYA ARCHITECT AND BUILDER) रचनात्मकता, इंजीनियरिंग विशेषज्ञता और बेहतरीन डिजाइन सिद्धांतों को मिलाकर शानदार आवासीय और व्यावसायिक आर्किटेक्चर प्रदान करता है। हम आपके सपनों के घर और प्रोजेक्ट्स को हकीकत में बदलते हैं।
+          </p>
           <p className="text-secondary text-lg leading-relaxed mb-10 max-w-lg">
-            ARYA ARCHITECT AND BUILDER combines creativity, engineering expertise, and timeless design principles to deliver elegant residential and commercial architecture. Our approach seamlessly blends aesthetics with functionality, ensuring every project is a masterpiece tailored to our clients' vision.
+            हमारे हर प्रोजेक्ट में आधुनिक तकनीक, मजबूत निर्माण और आकर्षक डिज़ाइन का बेहतरीन संयोजन होता है।
           </p>
 
-          <a href="#contact" className="inline-flex items-center gap-2 pb-2 border-b-2 border-primary text-primary font-medium hover:text-accent hover:border-accent transition-colors group">
-            Know More About Us
+          <a href="#projects" className="inline-flex items-center gap-2 pb-2 border-b-2 border-primary text-primary font-medium hover:text-accent hover:border-accent transition-colors group">
+            हमारे प्रोजेक्ट्स देखें
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>

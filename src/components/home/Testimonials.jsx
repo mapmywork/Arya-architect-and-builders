@@ -8,49 +8,49 @@ import { Star } from 'lucide-react'
 const testimonials = [
   {
     name: 'Rahul',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=11',
     text: 'Bahut acchi service, fast work',
     stars: 5
   },
   {
     name: 'Ajay',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=12',
     text: 'Best civil engineer in area',
     stars: 5
   },
   {
     name: 'Neelesh Vishwakarna',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=13',
     text: 'Best civil engineer in panna',
     stars: 5
   },
   {
     name: 'Mahendra Yadav',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=14',
     text: 'price bhi kam h aur kaam bhi oura dete h',
     stars: 5
   },
   {
     name: 'Sanjay',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=15',
     text: 'mene nmdc ke work bhi yaha se karwaye h',
     stars: 5
   },
   {
     name: 'Gourav',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=16',
     text: 'maximum civil work ke liye ye best h',
     stars: 4
   },
   {
     name: 'Soniya',
-    role: 'Customer',
+    role: 'ग्राहक',
     image: 'https://i.pravatar.cc/150?img=5',
     text: 'mene bahar se kaam karvaya raha lekin pasand nahu aaya to mere 8000 rs bhi chake gye aur inka work 3500 rs me comolete kiya aur pasand bhi aaya',
     stars: 5
@@ -64,11 +64,11 @@ const Testimonials = () => {
         <div className="text-center mb-16">
            <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">Testimonials</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">प्रशंसापत्र</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-            Client <span className="text-secondary font-light italic">Reviews</span>
+            ग्राहक <span className="text-secondary font-light italic">समीक्षाएं</span>
           </h2>
         </div>
 
