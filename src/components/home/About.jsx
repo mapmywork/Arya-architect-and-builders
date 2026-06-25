@@ -14,22 +14,22 @@ const About = () => {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">हमारे बारे में</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">About Us</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-8">
-            आधुनिक आर्किटेक्चर के माध्यम से <span className="text-secondary font-light italic">खूबसूरत जगहों का निर्माण</span>
+            Creating beautiful spaces through <span className="text-secondary font-light italic">modern architecture</span>
           </h2>
-          
+
           <p className="text-secondary text-lg leading-relaxed mb-6 max-w-lg">
-            आर्या आर्किटेक्ट और बिल्डर (ARYA ARCHITECT AND BUILDER) रचनात्मकता, इंजीनियरिंग विशेषज्ञता और बेहतरीन डिजाइन सिद्धांतों को मिलाकर शानदार आवासीय और व्यावसायिक आर्किटेक्चर प्रदान करता है। हम आपके सपनों के घर और प्रोजेक्ट्स को हकीकत में बदलते हैं।
+            ARYA ARCHITECT AND BUILDER provides stunning residential and commercial architecture by combining creativity, engineering expertise, and excellent design principles. We turn your dream homes and projects into reality.
           </p>
           <p className="text-secondary text-lg leading-relaxed mb-10 max-w-lg">
-            हमारे हर प्रोजेक्ट में आधुनिक तकनीक, मजबूत निर्माण और आकर्षक डिज़ाइन का बेहतरीन संयोजन होता है।
+            Every project of ours features a perfect combination of modern technology, robust construction, and attractive design.
           </p>
 
           <a href="#projects" className="inline-flex items-center gap-2 pb-2 border-b-2 border-primary text-primary font-medium hover:text-accent hover:border-accent transition-colors group">
-            हमारे प्रोजेक्ट्स देखें
+            View Our Projects
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
@@ -41,12 +41,12 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="absolute top-0 right-0 w-[70%] h-[70%] rounded-3xl overflow-hidden shadow-2xl z-10"
+            className="absolute top-0 right-0 w-[70%] h-[70%] rounded-3xl overflow-hidden shadow-2xl z-10 bg-white"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" 
-              alt="Architecture Detail" 
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            <img
+              src="/assets/11.jpeg"
+              alt="Architecture Detail"
+              className="w-full h-full object-contain hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
 
@@ -55,12 +55,12 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute bottom-0 left-0 w-[60%] h-[50%] rounded-3xl overflow-hidden shadow-2xl z-20 border-8 border-background"
+            className="absolute bottom-0 left-0 w-[60%] h-[50%] rounded-3xl overflow-hidden shadow-2xl z-20 border-8 border-background bg-white"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" 
-              alt="Interior Design" 
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            <img
+              src="/assets/12.jpeg"
+              alt="Interior Design"
+              className="w-full h-full object-contain hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
 

@@ -16,7 +16,7 @@ const FloatingButtons = () => {
       >
         <MessageCircle className="w-6 h-6" />
         <span className="absolute right-full mr-4 bg-black/80 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-          WhatsApp पर मैसेज करें
+          Message on WhatsApp
         </span>
       </a>
 
@@ -28,7 +28,7 @@ const FloatingButtons = () => {
       >
         <Phone className="w-6 h-6" />
         <span className="absolute right-full mr-4 bg-black/80 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-          हमें कॉल करें
+          Call Us
         </span>
       </a>
     </div>

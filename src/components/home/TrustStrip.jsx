@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { PenTool, Box, Glasses, HardHat } from 'lucide-react'
 
 const features = [
-  { icon: PenTool, title: 'आर्किटेक्चरल प्लानिंग' },
-  { icon: Box, title: 'इंटीरियर डिज़ाइन' },
-  { icon: Glasses, title: '3D विज़ुअलाइज़ेशन' },
-  { icon: HardHat, title: 'निर्माण परामर्श' },
+  { icon: PenTool, title: 'Architectural Planning' },
+  { icon: Box, title: 'Interior Design' },
+  { icon: Glasses, title: '3D Visualization' },
+  { icon: HardHat, title: 'Construction Consultancy' },
 ]
 
 const TrustStrip = () => {
@@ -20,7 +20,7 @@ const TrustStrip = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:-translate-y-2 transition-transform duration-300"
+              className="bg-white shadow-xl border border-black/5 rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="h-14 w-14 rounded-full bg-background flex items-center justify-center text-accent mb-4 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 <feature.icon size={24} />

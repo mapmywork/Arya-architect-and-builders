@@ -12,7 +12,6 @@ import Testimonials from '../components/home/Testimonials'
 import Contact from '../components/home/Contact'
 import Engineers from '../components/nakshewala/Engineers'
 import PricingCalculator from '../components/nakshewala/PricingCalculator'
-import PaymentInfo from '../components/nakshewala/PaymentInfo'
 import InitialPopup from '../components/home/InitialPopup'
 import FloatingButtons from '../components/layout/FloatingButtons'
 
@@ -34,7 +33,6 @@ const Home = () => {
         <WhyChooseUs />
         <Stats />
         <Testimonials />
-        <PaymentInfo />
         <Contact />
       </main>
       <Footer />

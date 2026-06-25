@@ -3,10 +3,10 @@ const CountUp = CountUpPkg.default || CountUpPkg
 import { motion } from 'framer-motion'
 
 const stats = [
-  { number: 500, label: 'प्रोजेक्ट्स', suffix: '+' },
-  { number: 150, label: 'संतुष्ट ग्राहक', suffix: '+' },
-  { number: 25, label: 'कमर्शियल प्रोजेक्ट्स', suffix: '+' },
-  { number: 10, label: 'वर्षों का अनुभव', suffix: '+' }
+  { number: 500, label: 'Projects', suffix: '+' },
+  { number: 150, label: 'Happy Clients', suffix: '+' },
+  { number: 25, label: 'Commercial Projects', suffix: '+' },
+  { number: 10, label: 'Years Experience', suffix: '+' }
 ]
 
 const Stats = () => {

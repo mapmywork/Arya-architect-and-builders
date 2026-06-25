@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import { Phone } from 'lucide-react'
 
 const navItems = [
-  { label: 'प्रोजेक्ट्स', href: '#projects' },
-  { label: 'सेवाएं', href: '#services' },
-  { label: 'हमारे बारे में', href: '#about' },
-  { label: 'प्रक्रिया', href: '#process' },
-  { label: 'संपर्क करें', href: '#contact' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Services', href: '#services' },
+  { label: 'About Us', href: '#about' },
+  { label: 'Process', href: '#process' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 const Navbar = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
             href="#contact"
             className="px-6 py-2.5 bg-accent text-white text-sm font-medium rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-accent/20"
           >
-            कोटेशन प्राप्त करें
+            Get a Quote
           </a>
         </div>
 

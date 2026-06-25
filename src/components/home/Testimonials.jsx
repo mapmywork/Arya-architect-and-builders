@@ -8,49 +8,49 @@ import { Star } from 'lucide-react'
 const testimonials = [
   {
     name: 'Rahul',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=11',
     text: 'Bahut acchi service, fast work',
     stars: 5
   },
   {
     name: 'Ajay',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=12',
     text: 'Best civil engineer in area',
     stars: 5
   },
   {
     name: 'Neelesh Vishwakarna',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=13',
     text: 'Best civil engineer in panna',
     stars: 5
   },
   {
     name: 'Mahendra Yadav',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=14',
     text: 'price bhi kam h aur kaam bhi oura dete h',
     stars: 5
   },
   {
     name: 'Sanjay',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=15',
     text: 'mene nmdc ke work bhi yaha se karwaye h',
     stars: 5
   },
   {
     name: 'Gourav',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=16',
     text: 'maximum civil work ke liye ye best h',
     stars: 4
   },
   {
     name: 'Soniya',
-    role: 'ग्राहक',
+    role: 'Customer',
     image: 'https://i.pravatar.cc/150?img=5',
     text: 'mene bahar se kaam karvaya raha lekin pasand nahu aaya to mere 8000 rs bhi chake gye aur inka work 3500 rs me comolete kiya aur pasand bhi aaya',
     stars: 5
@@ -62,13 +62,13 @@ const Testimonials = () => {
     <section className="py-24 md:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-           <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">प्रशंसापत्र</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">Testimonials</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-            ग्राहक <span className="text-secondary font-light italic">समीक्षाएं</span>
+            Customer <span className="text-secondary font-light italic">Reviews</span>
           </h2>
         </div>
 

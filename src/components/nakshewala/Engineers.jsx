@@ -14,11 +14,11 @@ const Engineers = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">नक्शेवाला टीम</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">Nakshewala Team</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-            हमारे <span className="text-secondary font-light italic">इंजीनियर्स</span>
+            Our <span className="text-secondary font-light italic">Engineers</span>
           </h2>
         </div>
 
