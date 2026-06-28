@@ -6,6 +6,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const projects = [
+  { name: 'Residential Floor Plan', category: '2D Planning', location: 'Custom Design', image: '/assets/projects/floor_plan_1_1782629109980.png' },
+  { name: 'Modern House Layout', category: '2D Planning', location: 'Custom Design', image: '/assets/projects/floor_plan_2_1782629122213.png' },
+  { name: 'Commercial Office Plan', category: '2D Planning', location: 'Custom Design', image: '/assets/projects/floor_plan_3_1782629132798.png' },
+  { name: 'Structural Blueprint', category: '2D Planning', location: 'Custom Design', image: '/assets/projects/floor_plan_4_1782629143931.png' },
   { name: 'Luxury Villa', category: 'Architecture Design', location: 'Panna, MP', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
   { name: 'Modern Home', category: 'Interior Design', location: 'Khajuraho, MP', image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop' },
   { name: 'Corporate Office', category: 'Commercial', location: 'Satna, MP', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop' },

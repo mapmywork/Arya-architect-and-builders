@@ -9,9 +9,9 @@ const Hero = () => {
       {/* Background Image & Overlay - Blueprint/Plan Drawing style */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/hero_bg.png"
-          alt="Modern Bungalow Elevation"
-          className="w-full h-full object-cover opacity-50 scale-105 animate-[kenburns_20s_ease-out_forwards]"
+          src="/assets/construction_hero_bg.png"
+          alt="Civil Engineering and Architecture Hero Background"
+          className="w-full h-full object-cover object-bottom opacity-50 scale-105 animate-[kenburns_20s_ease-out_forwards]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/30"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
@@ -26,20 +26,24 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] mb-6">
-              Designing spaces <br />
-              <span className="text-white/80">that</span> <span className="text-accent italic font-light">inspire.</span>
+              Advance Civil <br />
+              Solution
             </h1>
-            <p className="text-white/70 text-lg md:text-xl max-w-xl mb-10 font-light leading-relaxed text-balance">
-              From architectural planning and front elevation to luxury interiors and construction consultancy, we turn your ideas into spectacular spaces with precision and creativity.
+            <h2 className="text-2xl md:text-3xl text-accent font-medium mb-6">
+              Professional Civil Engineering Services
+            </h2>
+            <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-10 font-light leading-relaxed text-balance">
+              2D Floor Plan &bull; Plotting Plan &bull; Roof Plan &bull; Estimate &bull; Structural Drawing &bull; 3D Front Elevation &bull; 3D Floor Plan &bull; Interior Design &bull; Site Visit
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
-              <a href="#projects" className="px-8 py-4 bg-accent text-white rounded-full font-medium hover:bg-white hover:text-primary transition-all duration-300 flex items-center gap-2 group">
-                View Projects
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <a href="tel:+919179868594" className="px-8 py-4 bg-accent text-primary rounded-xl font-bold hover:bg-white transition-all duration-300 flex items-center gap-2 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Call Now
               </a>
-              <a href="#contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full font-medium hover:bg-white/20 transition-all duration-300">
-                Get Consultation
+              <a href="https://wa.me/9179868594" target="_blank" rel="noreferrer" className="px-8 py-4 bg-accent text-primary rounded-xl font-bold hover:bg-white transition-all duration-300 flex items-center gap-2 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                WhatsApp
               </a>
             </div>
           </motion.div>

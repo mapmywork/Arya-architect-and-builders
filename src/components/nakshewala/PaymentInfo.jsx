@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { QrCode, MessageCircle, Send, Wallet, AlertCircle, X } from 'lucide-react'
 
-const PaymentInfo = ({ isOpen, onClose }) => {
+const PaymentInfo = ({ isOpen, onClose, amount }) => {
   if (!isOpen) return null;
 
   return (
@@ -47,6 +47,12 @@ const PaymentInfo = ({ isOpen, onClose }) => {
             </div>
 
             <div className="space-y-4 mb-6">
+              {amount > 0 && (
+                <div className="bg-background rounded-xl p-3 border border-black/5">
+                  <p className="text-xs text-secondary mb-1">Amount to Pay</p>
+                  <p className="font-mono text-2xl font-bold text-accent">₹{amount.toLocaleString()}</p>
+                </div>
+              )}
               <div className="bg-background rounded-xl p-3 border border-black/5">
                 <p className="text-xs text-secondary mb-1">UPI ID</p>
                 <p className="font-mono text-base font-bold text-primary">9179868594@ybl</p>
@@ -72,12 +78,12 @@ const PaymentInfo = ({ isOpen, onClose }) => {
             viewport={{ once: true }}
             className="flex flex-col gap-3"
           >
-            <a href="upi://pay?pa=9179868594@ybl&pn=SAHAYATA%20SUTRAKAR" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-primary text-white rounded-2xl font-bold text-base hover:bg-accent transition-colors shadow-lg hover:shadow-accent/20 group">
+            <a href={`upi://pay?pa=9179868594@ybl&pn=SAHAYATA%20SUTRAKAR${amount ? `&am=${amount}` : ''}`} className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-primary text-white rounded-2xl font-bold text-base hover:bg-accent transition-colors shadow-lg hover:shadow-accent/20 group">
               <QrCode size={20} className="group-hover:scale-110 transition-transform" />
               Pay Now
             </a>
 
-            <a href="https://wa.me/9179868594?text=I%20have%20made%20the%20payment,%20here%20is%20the%20screenshot." target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
+            <a href={`https://wa.me/9179868594?text=I%20have%20made%20the%20payment${amount ? `%20of%20₹${amount}` : ''},%20here%20is%20the%20screenshot.`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
               <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
               Send Screenshot on WhatsApp
             </a>

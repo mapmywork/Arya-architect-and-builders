@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Phone } from 'lucide-react'
+import logo from '../../assets/66.png'
 
 const navItems = [
   { label: 'Projects', href: '#projects' },
@@ -33,8 +34,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <a href="#" className={`text-2xl font-heading font-bold tracking-tighter ${isScrolled ? 'text-primary' : 'text-white'}`}>
-            ARYA<span className="text-accent">.</span>
+          <a href="#" className="block h-16 group">
+            <img src={logo} alt="Company Logo" className="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] group-hover:scale-105 transition-all duration-300" />
           </a>
         </div>
 

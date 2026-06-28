@@ -114,7 +114,7 @@ const PricingCalculator = () => {
       </div>
       <AnimatePresence>
         {isPaymentModalOpen && (
-          <PaymentInfo isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
+          <PaymentInfo isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} amount={calculateTotal()} />
         )}
       </AnimatePresence>
     </section>

@@ -1,5 +1,6 @@
 import { ArrowUp } from 'lucide-react'
 import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
+import logo from '../../assets/66.png'
 
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
           
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="#" className="inline-block text-2xl font-heading font-bold tracking-tighter text-white mb-6">
-              ARYA<span className="text-accent">.</span>
+            <a href="#" className="inline-block h-16 mb-6 group">
+              <img src={logo} alt="Company Logo" className="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.5)] group-hover:scale-105 transition-all duration-300" />
             </a>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Premium architecture and interior design studio based in Panna, Madhya Pradesh. We turn ideas into spectacular spaces with precision and creativity.
