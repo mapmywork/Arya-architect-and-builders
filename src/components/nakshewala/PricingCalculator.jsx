@@ -4,12 +4,14 @@ import { Calculator } from 'lucide-react'
 import PaymentInfo from './PaymentInfo'
 
 const services = [
-  { id: '2d', name: '2D Plan', price: 2, unit: 'sqft' },
-  { id: 'ruf', name: 'Rough Plan', price: 1, unit: 'sqft' },
-  { id: '3d', name: '3D Elevation', price: 4, unit: 'sqft' },
-  { id: 'interior', name: 'Interior', price: 8, unit: 'sqft' },
-  { id: 'site', name: 'Site Visit', price: 800, unit: 'flat' },
-  { id: 'dgps', name: 'DGPS Survey', price: 3000, unit: 'acre' }
+  { id: '2d', name: '2D Plan', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop' },
+  { id: 'ruf', name: 'Rough Plan', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?q=80&w=2070&auto=format&fit=crop' },
+  { id: '3d', name: '3D Elevation', price: 4, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop' },
+  { id: 'interior', name: 'Interior', price: 8, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop' },
+  { id: 'pillar', name: 'Piller Plan', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
+  { id: '3dfloor', name: '3D Floor Plan', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop' },
+  { id: 'site', name: 'Site Visit', price: 800, unit: 'flat', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXDRYgi1yelIyTu9GOEfzSdqUpRs2KktoFpBeK4WUer3xNqWBgVW842U&s=10' },
+  { id: 'dgps', name: 'DGPS Survey', price: 3000, unit: 'acre', image: 'https://spectrokavs.com/wp-content/uploads/AdobeStock_189984006-scaled-1.jpeg' }
 ]
 
 const PricingCalculator = () => {
@@ -60,9 +62,12 @@ const PricingCalculator = () => {
               return (
                 <motion.div 
                   key={service.id}
-                  className={`border rounded-2xl p-6 transition-colors duration-300 cursor-pointer ${isSelected ? 'bg-white/10 border-accent' : 'bg-white/5 border-white/10 hover:border-white/30'}`}
+                  className={`group border rounded-2xl p-6 transition-colors duration-300 cursor-pointer ${isSelected ? 'bg-white/10 border-accent' : 'bg-white/5 border-white/10 hover:border-white/30'}`}
                 >
-                  <div className="flex items-center justify-between mb-4" onClick={() => handleToggle(service.id)}>
+                  <div className="w-full h-40 mb-5 rounded-xl overflow-hidden" onClick={() => handleToggle(service.id)}>
+                    <img src={service.image} alt={service.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  </div>
+                  <div className={`flex items-center justify-between ${isSelected && service.unit !== 'flat' ? 'mb-4' : ''}`} onClick={() => handleToggle(service.id)}>
                     <div className="flex items-center gap-3">
                       <div className={`w-6 h-6 rounded flex items-center justify-center border ${isSelected ? 'bg-accent border-accent' : 'border-white/30'}`}>
                         {isSelected && <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>}

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import CountUpPkg from 'react-countup'
 const CountUp = CountUpPkg.default || CountUpPkg
 import { MapPin, Star, Building, ArrowRight } from 'lucide-react'
+import aryaLogo from '../../assets/arya_logo.png.jpeg'
 
 const Hero = () => {
   return (
@@ -25,10 +26,13 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] mb-6">
-              Advance Civil <br />
-              Solution
-            </h1>
+            <div className="mb-6">
+              <img 
+                src={aryaLogo} 
+                alt="Arya Architect & Builder Logo" 
+                className="h-32 md:h-48 lg:h-56 w-auto object-contain drop-shadow-2xl"
+              />
+            </div>
             <h2 className="text-2xl md:text-3xl text-accent font-medium mb-6">
               Professional Civil Engineering Services
             </h2>

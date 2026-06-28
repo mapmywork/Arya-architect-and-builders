@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 const services = [
   {
     title: 'Architectural Planning',
-    description: 'Comprehensive 2D and 3D planning focusing on space optimization and structural strength.',
+    description: 'Comprehensive 2D and 3D planning focusing on space optimization and structural strength. Piller plan - 1 rs/sqf, 3D floor plan - 2 rs/sqf.',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop'
   },
   {
