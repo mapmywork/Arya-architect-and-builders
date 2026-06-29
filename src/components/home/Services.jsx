@@ -8,6 +8,16 @@ const services = [
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop'
   },
   {
+    title: 'Plotting Plan',
+    description: 'Detailed and accurate plotting plans for optimal land utilization and layout planning. Pricing: 0.2 rs/sqf.',
+    image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop'
+  },
+  {
+    title: 'Structural Drawing',
+    description: 'Comprehensive structural drawings ensuring safety, stability, and adherence to engineering standards. Pricing: 3 rs/sqf.',
+    image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
     title: '3D Elevation Design',
     description: 'Realistic 3D visualizations that bring your architectural concepts to life before construction.',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop'

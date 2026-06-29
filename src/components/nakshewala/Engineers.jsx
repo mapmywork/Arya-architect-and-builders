@@ -2,9 +2,10 @@ import { motion } from 'framer-motion'
 import { Phone } from 'lucide-react'
 
 const engineers = [
-  { name: 'Er. Swati Sahu', phone: '78987 95031' },
-  { name: 'Er. Shivam Athiya', phone: '83191 03175' },
-  { name: 'Er. Sahayata Sutrakar', phone: '9179868594' }
+  { name: 'Er. Swati Sahu', role: 'Architect', phone: '78987 95031' },
+  { name: 'Er. Shivam Athiya', role: 'Civil Engi. Expert', phone: '83191 03175' },
+  { name: 'Er. Jubair Khan', role: 'Tech. Expert', phone: '80857 86182' },
+  { name: 'Er. Sahayata Sutrakar', role: 'Architect', phone: '91798 68594' }
 ]
 
 const Engineers = () => {
@@ -22,7 +23,7 @@ const Engineers = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {engineers.map((eng, index) => (
             <motion.div
               key={index}
@@ -30,11 +31,12 @@ const Engineers = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass bg-white p-8 rounded-3xl flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300"
+              className="glass bg-white p-6 rounded-3xl flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 h-full"
             >
-              <h3 className="text-xl font-heading font-bold text-primary mb-4">{eng.name}</h3>
-              <a href={`tel:+91${eng.phone.replace(/\s+/g, '')}`} className="flex items-center gap-2 text-secondary hover:text-accent transition-colors bg-background px-6 py-3 rounded-full text-lg shadow-sm border border-black/5">
-                <Phone size={20} className="text-accent" />
+              <h3 className="text-xl font-heading font-bold text-primary mb-1">{eng.name}</h3>
+              <p className="text-xs text-secondary/70 mb-5 font-bold uppercase tracking-wider">{eng.role}</p>
+              <a href={`tel:+91${eng.phone.replace(/\s+/g, '')}`} className="flex items-center gap-2 text-secondary hover:text-accent transition-colors bg-background px-5 py-2.5 rounded-full text-base shadow-sm border border-black/5 mt-auto w-full justify-center">
+                <Phone size={18} className="text-accent shrink-0" />
                 <span className="font-bold">{eng.phone}</span>
               </a>
             </motion.div>

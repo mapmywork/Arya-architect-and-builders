@@ -10,6 +10,8 @@ const services = [
   { id: 'interior', name: 'Interior', price: 8, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop' },
   { id: 'pillar', name: 'Piller Plan', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
   { id: '3dfloor', name: '3D Floor Plan', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop' },
+  { id: 'plotting', name: 'Plotting Plan', price: 0.2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop' },
+  { id: 'structural', name: 'Structural Drawing', price: 3, unit: 'sqft', image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop' },
   { id: 'site', name: 'Site Visit', price: 800, unit: 'flat', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXDRYgi1yelIyTu9GOEfzSdqUpRs2KktoFpBeK4WUer3xNqWBgVW842U&s=10' },
   { id: 'dgps', name: 'DGPS Survey', price: 3000, unit: 'acre', image: 'https://spectrokavs.com/wp-content/uploads/AdobeStock_189984006-scaled-1.jpeg' }
 ]

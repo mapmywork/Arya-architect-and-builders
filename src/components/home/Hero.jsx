@@ -33,6 +33,9 @@ const Hero = () => {
                 className="h-32 md:h-48 lg:h-56 w-auto object-contain drop-shadow-2xl"
               />
             </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-heading font-bold mb-4 tracking-wide">
+              ARYA ARCHITECT & BUILDER
+            </h1>
             <h2 className="text-2xl md:text-3xl text-accent font-medium mb-6">
               Professional Civil Engineering Services
             </h2>

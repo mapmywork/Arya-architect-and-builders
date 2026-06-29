@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { QrCode, MessageCircle, Send, Wallet, AlertCircle, X } from 'lucide-react'
+import qrImage from '../../assets/QR.PNG'
 
 const PaymentInfo = ({ isOpen, onClose, amount }) => {
   if (!isOpen) return null;
@@ -78,10 +79,13 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
             viewport={{ once: true }}
             className="flex flex-col gap-3"
           >
-            <a href={`upi://pay?pa=9179868594@ybl&pn=SAHAYATA%20SUTRAKAR${amount ? `&am=${amount}` : ''}`} className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-primary text-white rounded-2xl font-bold text-base hover:bg-accent transition-colors shadow-lg hover:shadow-accent/20 group">
-              <QrCode size={20} className="group-hover:scale-110 transition-transform" />
-              Pay Now
-            </a>
+            <div className="w-full aspect-square bg-white border border-black/10 rounded-2xl flex flex-col items-center justify-center p-2 relative mb-2 shadow-sm overflow-hidden">
+              <img 
+                src={qrImage} 
+                alt="Payment QR Code" 
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <a href={`https://wa.me/9179868594?text=I%20have%20made%20the%20payment${amount ? `%20of%20₹${amount}` : ''},%20here%20is%20the%20screenshot.`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
               <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
