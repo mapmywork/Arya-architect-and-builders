@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { PenTool, Box, Glasses, HardHat } from 'lucide-react'
 
 const features = [
-  { icon: PenTool, title: 'Architectural Planning' },
-  { icon: Box, title: 'Interior Design' },
-  { icon: Glasses, title: '3D Visualization' },
-  { icon: HardHat, title: 'Construction Consultancy' },
+  { icon: PenTool, title: 'वास्तु योजना' },
+  { icon: Box, title: 'इंटीरियर डिजाइन' },
+  { icon: Glasses, title: '3D विज़ुअलाइज़ेशन' },
+  { icon: HardHat, title: 'निर्माण परामर्श' },
 ]
 
 const TrustStrip = () => {

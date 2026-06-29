@@ -24,16 +24,16 @@ const Contact = () => {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">Contact Us</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">संपर्क करें</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-8">
-            Let's build your <br />
-            <span className="text-white/60 font-light italic">dream space</span>
+            आइए आपके <br />
+            <span className="text-white/60 font-light italic">सपनों का स्थान बनाएं</span>
           </h2>
           
           <p className="text-white/70 mb-12 max-w-md">
-            Whether you are planning a new home, renovating a commercial space, or need construction consultancy, we are here to help you.
+            चाहे आप एक नए घर की योजना बना रहे हों, एक व्यावसायिक स्थान का नवीनीकरण कर रहे हों, या निर्माण परामर्श की आवश्यकता हो, हम आपकी सहायता के लिए यहाँ हैं।
           </p>
 
           <div className="space-y-8 mb-12">
@@ -42,8 +42,8 @@ const Contact = () => {
                 <MapPin size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-heading font-semibold mb-1">Office Address</h4>
-                <p className="text-white/60">Panna, Madhya Pradesh, India</p>
+                <h4 className="text-lg font-heading font-semibold mb-1">कार्यालय का पता</h4>
+                <p className="text-white/60">पन्ना, मध्य प्रदेश, भारत</p>
               </div>
             </div>
             
@@ -52,7 +52,7 @@ const Contact = () => {
                 <Phone size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-heading font-semibold mb-1">Phone Number</h4>
+                <h4 className="text-lg font-heading font-semibold mb-1">फ़ोन नंबर</h4>
                 <a href="tel:+917974768589" className="text-white/60 hover:text-accent transition-colors">7974768589</a>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                 <Mail size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-heading font-semibold mb-1">Email Address</h4>
+                <h4 className="text-lg font-heading font-semibold mb-1">ईमेल पता</h4>
                 <a href="mailto:ajayaray949@gmail.com" className="text-white/60 hover:text-accent transition-colors">ajayaray949@gmail.com</a>
               </div>
             </div>
@@ -77,34 +77,34 @@ const Contact = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="glass-dark p-8 md:p-10 rounded-[2rem]">
-            <h3 className="text-2xl font-heading font-bold mb-6">Send us a message</h3>
+            <h3 className="text-2xl font-heading font-bold mb-6">हमें एक संदेश भेजें</h3>
             <form className="space-y-4 mb-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input 
                   type="text" 
-                  placeholder="Your Name" 
+                  placeholder="आपका नाम" 
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors"
                 />
                 <input 
                   type="tel" 
-                  placeholder="Phone Number" 
+                  placeholder="फ़ोन नंबर" 
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors"
                 />
               </div>
               <input 
                 type="email" 
-                placeholder="Email Address" 
+                placeholder="ईमेल पता" 
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors"
               />
               <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/40 focus:text-white focus:outline-none focus:border-accent transition-colors appearance-none" defaultValue="">
-                <option value="" disabled>Select Project Type</option>
-                <option value="residential">Residential Architecture</option>
-                <option value="commercial">Commercial Design</option>
-                <option value="interior">Interior Design</option>
-                <option value="consultancy">Construction Consultancy</option>
+                <option value="" disabled>परियोजना का प्रकार चुनें</option>
+                <option value="residential">आवासीय वास्तुकला</option>
+                <option value="commercial">कमर्शियल डिजाइन</option>
+                <option value="interior">इंटीरियर डिजाइन</option>
+                <option value="consultancy">निर्माण परामर्श</option>
               </select>
               <textarea 
-                placeholder="Your Message" 
+                placeholder="आपका संदेश" 
                 rows="4"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors resize-none"
               ></textarea>
@@ -112,7 +112,7 @@ const Contact = () => {
               <div className="flex flex-wrap gap-4 pt-2">
                 <button type="submit" className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-accent text-white rounded-xl font-medium hover:bg-white hover:text-primary transition-all duration-300">
                   <Send size={18} />
-                  Submit
+                  सबमिट करें
                 </button>
                 <a href="https://wa.me/917974768589" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 px-6 py-4 bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30 rounded-xl font-medium hover:bg-[#25D366] hover:text-white transition-all duration-300">
                   <MessageCircle size={18} />

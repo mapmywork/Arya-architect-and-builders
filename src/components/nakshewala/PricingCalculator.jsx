@@ -4,16 +4,16 @@ import { Calculator } from 'lucide-react'
 import PaymentInfo from './PaymentInfo'
 
 const services = [
-  { id: '2d', name: '2D Plan', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop' },
-  { id: 'ruf', name: 'Rough Plan', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?q=80&w=2070&auto=format&fit=crop' },
-  { id: '3d', name: '3D Elevation', price: 4, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop' },
-  { id: 'interior', name: 'Interior', price: 8, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop' },
-  { id: 'pillar', name: 'Piller Plan', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
-  { id: '3dfloor', name: '3D Floor Plan', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop' },
-  { id: 'plotting', name: 'Plotting Plan', price: 0.2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop' },
-  { id: 'structural', name: 'Structural Drawing', price: 3, unit: 'sqft', image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop' },
-  { id: 'site', name: 'Site Visit', price: 800, unit: 'flat', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXDRYgi1yelIyTu9GOEfzSdqUpRs2KktoFpBeK4WUer3xNqWBgVW842U&s=10' },
-  { id: 'dgps', name: 'DGPS Survey', price: 3000, unit: 'acre', image: 'https://spectrokavs.com/wp-content/uploads/AdobeStock_189984006-scaled-1.jpeg' }
+  { id: '2d', name: '2D प्लान', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop' },
+  { id: 'ruf', name: 'रफ प्लान', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?q=80&w=2070&auto=format&fit=crop' },
+  { id: '3d', name: '3D एलिवेशन', price: 4, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop' },
+  { id: 'interior', name: 'इंटीरियर', price: 8, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop' },
+  { id: 'pillar', name: 'पिलर प्लान', price: 1, unit: 'sqft', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
+  { id: '3dfloor', name: '3D फ्लोर प्लान', price: 2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop' },
+  { id: 'plotting', name: 'प्लॉटिंग प्लान', price: 0.2, unit: 'sqft', image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop' },
+  { id: 'structural', name: 'स्ट्रक्चरल ड्रॉइंग', price: 3, unit: 'sqft', image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop' },
+  { id: 'site', name: 'साइट विजिट', price: 800, unit: 'flat', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXDRYgi1yelIyTu9GOEfzSdqUpRs2KktoFpBeK4WUer3xNqWBgVW842U&s=10' },
+  { id: 'dgps', name: 'DGPS सर्वेक्षण', price: 3000, unit: 'acre', image: 'https://spectrokavs.com/wp-content/uploads/AdobeStock_189984006-scaled-1.jpeg' }
 ]
 
 const PricingCalculator = () => {
@@ -50,10 +50,10 @@ const PricingCalculator = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Select <span className="text-accent italic font-light">Service</span>
+            सेवा <span className="text-accent italic font-light">चुनें</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto">
-            Calculate the estimated cost of your project instantly.
+            अपने प्रोजेक्ट की अनुमानित लागत की तुरंत गणना करें।
           </p>
         </div>
 
@@ -76,12 +76,12 @@ const PricingCalculator = () => {
                       </div>
                       <h4 className="font-heading font-semibold">{service.name}</h4>
                     </div>
-                    <span className="text-accent font-medium">₹{service.price}/{service.unit === 'flat' ? 'visit' : service.unit}</span>
+                    <span className="text-accent font-medium">₹{service.price}/{service.unit === 'flat' ? 'विजिट' : service.unit === 'sqft' ? 'वर्ग फुट' : service.unit === 'acre' ? 'एकड़' : service.unit}</span>
                   </div>
 
                   {isSelected && service.unit !== 'flat' && (
                     <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between animate-fade-up">
-                      <label className="text-sm text-white/60">Enter Area ({service.unit}):</label>
+                      <label className="text-sm text-white/60">क्षेत्रफल दर्ज करें ({service.unit === 'sqft' ? 'वर्ग फुट' : service.unit === 'acre' ? 'एकड़' : service.unit}):</label>
                       <input 
                         type="number" 
                         min="1"
@@ -103,7 +103,7 @@ const PricingCalculator = () => {
                 <Calculator size={28} />
               </div>
               <div>
-                <p className="text-white/60 font-medium">Estimated Total</p>
+                <p className="text-white/60 font-medium">अनुमानित कुल</p>
                 <p className="text-4xl font-heading font-bold text-white">₹{calculateTotal().toLocaleString()}</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const PricingCalculator = () => {
                 onClick={() => setIsPaymentModalOpen(true)}
                 className="flex-1 md:flex-none px-8 py-4 bg-accent text-white text-center rounded-full font-medium hover:bg-white hover:text-primary transition-all duration-300"
               >
-                Proceed to Payment
+                भुगतान के लिए आगे बढ़ें
               </button>
             </div>
           </div>

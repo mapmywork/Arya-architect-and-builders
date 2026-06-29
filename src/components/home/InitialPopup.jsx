@@ -29,11 +29,11 @@ const InitialPopup = () => {
   const handleSubmit = (e) => {
     e.target.preventDefault?.(); // fallback if called from form
     if (!formData.name || !formData.mobile || !formData.address) {
-      alert('Please fill in all details.');
+      alert('कृपया सभी विवरण भरें।');
       return;
     }
 
-    const message = `Hello, my name is ${formData.name}.\nMobile: ${formData.mobile}\nAddress: ${formData.address}\nPlease contact me.`;
+    const message = `नमस्ते, मेरा नाम ${formData.name} है।\nमोबाइल: ${formData.mobile}\nपता: ${formData.address}\nकृपया मुझसे संपर्क करें।`;
     const whatsappNumber = '919876543210'; // Replace with actual number
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
@@ -59,44 +59,44 @@ const InitialPopup = () => {
             </button>
 
             <div className="bg-primary p-6 text-white text-center">
-              <h2 className="text-2xl font-bold mb-2">Connect With Us</h2>
-              <p className="text-white/80 text-sm">Provide your details and our team will contact you soon</p>
+              <h2 className="text-2xl font-bold mb-2">हमसे जुड़ें</h2>
+              <p className="text-white/80 text-sm">अपना विवरण दें और हमारी टीम जल्द ही आपसे संपर्क करेगी</p>
             </div>
 
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-1.5">Your Name</label>
+                <label className="block text-sm font-medium mb-1.5">आपका नाम</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Enter your name"
+                  placeholder="अपना नाम दर्ज करें"
                   className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-1.5">Mobile Number</label>
+                <label className="block text-sm font-medium mb-1.5">मोबाइल नंबर</label>
                 <input
                   type="tel"
                   name="mobile"
                   value={formData.mobile}
                   onChange={handleChange}
-                  placeholder="Enter your mobile number"
+                  placeholder="अपना मोबाइल नंबर दर्ज करें"
                   className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-1.5">Your Address</label>
+                <label className="block text-sm font-medium mb-1.5">आपका पता</label>
                 <textarea
                   name="address"
                   value={formData.address}
                   onChange={handleChange}
-                  placeholder="Enter your address"
+                  placeholder="अपना पता दर्ज करें"
                   rows="3"
                   className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
                   required
@@ -107,7 +107,7 @@ const InitialPopup = () => {
                 type="submit"
                 className="w-full py-3 px-4 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25 mt-2"
               >
-                Send on WhatsApp
+                WhatsApp पर भेजें
               </button>
             </form>
           </motion.div>

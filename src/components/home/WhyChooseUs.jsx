@@ -2,14 +2,14 @@ import { motion } from 'framer-motion'
 import { Users, BadgeIndianRupee, Clock, Target, Headset, HardHat, Monitor, Layers } from 'lucide-react'
 
 const reasons = [
-  { icon: Users, title: 'Experienced Engineers', desc: 'Our team comprises highly experienced and skilled civil engineers.' },
-  { icon: BadgeIndianRupee, title: 'Affordable Pricing', desc: 'We offer premium quality services at highly competitive prices.' },
-  { icon: Clock, title: 'Fast & Timely Work', desc: 'We guarantee timely project completion without any delays.' },
-  { icon: Target, title: 'Accurate Survey & Design', desc: 'Use of modern equipment like DGPS to ensure absolute accuracy.' },
-  { icon: Headset, title: 'Customer Support', desc: 'Round-the-clock dedicated support and guidance for our clients.' },
-  { icon: HardHat, title: 'Quality Assurance', desc: 'Strict supervision and use of premium standardized materials.' },
-  { icon: Monitor, title: '3D Visualization', desc: 'Realistic 3D renderings to visualize your dream space.' },
-  { icon: Layers, title: 'End-to-End Service', desc: 'Complete turnkey solutions from initial planning to final handover.' },
+  { icon: Users, title: 'अनुभवी इंजीनियर', desc: 'हमारी टीम में अत्यधिक अनुभवी और कुशल सिविल इंजीनियर शामिल हैं।' },
+  { icon: BadgeIndianRupee, title: 'किफायती मूल्य निर्धारण', desc: 'हम अत्यधिक प्रतिस्पर्धी कीमतों पर प्रीमियम गुणवत्ता वाली सेवाएं प्रदान करते हैं।' },
+  { icon: Clock, title: 'तेज़ और समय पर काम', desc: 'हम बिना किसी देरी के समय पर परियोजना पूरी करने की गारंटी देते हैं।' },
+  { icon: Target, title: 'सटीक सर्वेक्षण और डिजाइन', desc: 'पूर्ण सटीकता सुनिश्चित करने के लिए DGPS जैसे आधुनिक उपकरणों का उपयोग।' },
+  { icon: Headset, title: 'ग्राहक सहायता', desc: 'हमारे ग्राहकों के लिए चौबीसों घंटे समर्पित सहायता और मार्गदर्शन।' },
+  { icon: HardHat, title: 'गुणवत्ता आश्वासन', desc: 'सख्त पर्यवेक्षण और प्रीमियम मानकीकृत सामग्री का उपयोग।' },
+  { icon: Monitor, title: '3D विज़ुअलाइज़ेशन', desc: 'आपके सपनों के स्थान की कल्पना करने के लिए यथार्थवादी 3D रेंडरिंग।' },
+  { icon: Layers, title: 'संपूर्ण सेवा', desc: 'प्रारंभिक योजना से लेकर अंतिम हैंडओवर तक संपूर्ण टर्नकी समाधान।' },
 ]
 
 const WhyChooseUs = () => {
@@ -22,13 +22,13 @@ const WhyChooseUs = () => {
           <div className="lg:w-1/3">
              <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[2px] bg-accent"></div>
-              <span className="text-accent font-medium tracking-widest uppercase text-sm">Why Choose Us?</span>
+              <span className="text-accent font-medium tracking-widest uppercase text-sm">हमें क्यों चुनें?</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6 leading-tight">
-              Why we are the best <span className="text-secondary font-light italic">choice</span>
+              हम सबसे अच्छा <span className="text-secondary font-light italic">विकल्प</span> क्यों हैं
             </h2>
             <p className="text-secondary leading-relaxed mb-8">
-              With a decade of experience and a passion for architectural excellence, ARYA ARCHITECT AND BUILDER is committed to delivering projects that exceed expectations without compromising on quality or budget.
+              एक दशक के अनुभव और वास्तुशिल्प उत्कृष्टता के जुनून के साथ, आर्या आर्किटेक्ट एंड बिल्डर गुणवत्ता या बजट से समझौता किए बिना ऐसी परियोजनाएं देने के लिए प्रतिबद्ध है जो उम्मीदों से बढ़कर हों।
             </p>
           </div>
 

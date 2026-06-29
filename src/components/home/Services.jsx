@@ -3,43 +3,43 @@ import { ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    title: 'Architectural Planning',
-    description: 'Comprehensive 2D and 3D planning focusing on space optimization and structural strength. Piller plan - 1 rs/sqf, 3D floor plan - 2 rs/sqf.',
+    title: 'वास्तु योजना',
+    description: 'स्थान अनुकूलन और संरचनात्मक ताकत पर केंद्रित व्यापक 2D और 3D योजना। पिलर प्लान - 1 रुपये/वर्ग फुट, 3D फ्लोर प्लान - 2 रुपये/वर्ग फुट।',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop'
   },
   {
-    title: 'Plotting Plan',
-    description: 'Detailed and accurate plotting plans for optimal land utilization and layout planning. Pricing: 0.2 rs/sqf.',
+    title: 'प्लॉटिंग प्लान',
+    description: 'इष्टतम भूमि उपयोग और लेआउट योजना के लिए विस्तृत और सटीक प्लॉटिंग प्लान। मूल्य निर्धारण: 0.2 रुपये/वर्ग फुट।',
     image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop'
   },
   {
-    title: 'Structural Drawing',
-    description: 'Comprehensive structural drawings ensuring safety, stability, and adherence to engineering standards. Pricing: 3 rs/sqf.',
+    title: 'स्ट्रक्चरल ड्रॉइंग',
+    description: 'सुरक्षा, स्थिरता और इंजीनियरिंग मानकों का पालन सुनिश्चित करने वाले व्यापक स्ट्रक्चरल ड्रॉइंग। मूल्य निर्धारण: 3 रुपये/वर्ग फुट।',
     image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: '3D Elevation Design',
-    description: 'Realistic 3D visualizations that bring your architectural concepts to life before construction.',
+    title: '3D एलिवेशन डिजाइन',
+    description: 'यथार्थवादी 3D विज़ुअलाइज़ेशन जो निर्माण से पहले आपके वास्तुशिल्प विचारों को जीवंत करते हैं।',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Interior Design',
-    description: 'Luxury interior solutions to reflect your lifestyle and enhance your living experience.',
+    title: 'इंटीरियर डिजाइन',
+    description: 'आपकी जीवनशैली को दर्शाने और आपके रहने के अनुभव को बढ़ाने के लिए लक्जरी इंटीरियर समाधान।',
     image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2067&auto=format&fit=crop'
   },
   {
-    title: 'Front Elevation',
-    description: 'Stunning facade designs for residential and commercial properties that leave a lasting impression.',
+    title: 'फ्रंट एलिवेशन',
+    description: 'आवासीय और व्यावसायिक संपत्तियों के लिए शानदार मुखौटा डिजाइन जो एक स्थायी छाप छोड़ते हैं।',
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop'
   },
   {
-    title: 'Construction Consultancy',
-    description: 'Expert guidance and supervision for quality, safety, and timely project completion.',
+    title: 'निर्माण परामर्श',
+    description: 'गुणवत्ता, सुरक्षा और समय पर परियोजना पूरी करने के लिए विशेषज्ञ मार्गदर्शन और पर्यवेक्षण।',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXDRYgi1yelIyTu9GOEfzSdqUpRs2KktoFpBeK4WUer3xNqWBgVW842U&s=10'
   },
   {
-    title: 'Turnkey Solutions',
-    description: 'Complete project management from initial design to final handover, without any compromises.',
+    title: 'टर्नकी समाधान',
+    description: 'प्रारंभिक डिजाइन से लेकर अंतिम हैंडओवर तक संपूर्ण परियोजना प्रबंधन, बिना किसी समझौते के।',
     image: 'https://spectrokavs.com/wp-content/uploads/AdobeStock_189984006-scaled-1.jpeg'
   }
 ]
@@ -67,14 +67,14 @@ const Services = () => {
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[2px] bg-accent"></div>
-              <span className="text-accent font-medium tracking-widest uppercase text-sm">Our Expertise</span>
+              <span className="text-accent font-medium tracking-widest uppercase text-sm">हमारी विशेषज्ञता</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              Complete <span className="text-white/60 font-light italic">Solutions</span>
+              संपूर्ण <span className="text-white/60 font-light italic">समाधान</span>
             </h2>
           </div>
           <a href="#contact" className="hidden md:flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Discuss Your Project
+            अपने प्रोजेक्ट पर चर्चा करें
           </a>
         </div>
 
@@ -119,7 +119,7 @@ const Services = () => {
 
         <div className="mt-12 md:hidden">
           <a href="#contact" className="flex items-center justify-center w-full gap-2 px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Discuss Your Project
+            अपने प्रोजेक्ट पर चर्चा करें
           </a>
         </div>
       </div>

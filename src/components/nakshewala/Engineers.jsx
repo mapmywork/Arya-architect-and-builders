@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { Phone } from 'lucide-react'
 
 const engineers = [
-  { name: 'Er. Swati Sahu', role: 'Architect', phone: '78987 95031' },
-  { name: 'Er. Shivam Athiya', role: 'Civil Engi. Expert', phone: '83191 03175' },
-  { name: 'Er. Jubair Khan', role: 'Tech. Expert', phone: '80857 86182' },
-  { name: 'Er. Sahayata Sutrakar', role: 'Architect', phone: '91798 68594' }
+  { name: 'Er. Swati Sahu', role: 'आर्किटेक्ट', phone: '78987 95031' },
+  { name: 'Er. Shivam Athiya', role: 'सिविल इंजी. विशेषज्ञ', phone: '83191 03175' },
+  { name: 'Er. Jubair Khan', role: 'तकनीकी विशेषज्ञ', phone: '80857 86182' },
+  { name: 'Er. Sahayata Sutrakar', role: 'आर्किटेक्ट', phone: '91798 68594' }
 ]
 
 const Engineers = () => {
@@ -15,11 +15,11 @@ const Engineers = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">Nakshewala Team</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">नक्शेवाला टीम</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-            Our <span className="text-secondary font-light italic">Engineers</span>
+            हमारे <span className="text-secondary font-light italic">इंजीनियर</span>
           </h2>
         </div>
 

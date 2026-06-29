@@ -14,22 +14,22 @@ const About = () => {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-sm">About Us</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-sm">हमारे बारे में</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-8">
-            Creating beautiful spaces through <span className="text-secondary font-light italic">modern architecture</span>
+            <span className="text-secondary font-light italic">आधुनिक वास्तुकला</span> के माध्यम से खूबसूरत स्थान बनाना
           </h2>
 
           <p className="text-secondary text-lg leading-relaxed mb-6 max-w-lg">
-            ARYA ARCHITECT AND BUILDER provides stunning residential and commercial architecture by combining creativity, engineering expertise, and excellent design principles. We turn your dream homes and projects into reality.
+            आर्या आर्किटेक्ट एंड बिल्डर रचनात्मकता, इंजीनियरिंग विशेषज्ञता और उत्कृष्ट डिजाइन सिद्धांतों के संयोजन से शानदार आवासीय और व्यावसायिक वास्तुकला प्रदान करता है। हम आपके सपनों के घरों और परियोजनाओं को हकीकत में बदलते हैं।
           </p>
           <p className="text-secondary text-lg leading-relaxed mb-10 max-w-lg">
-            Every project of ours features a perfect combination of modern technology, robust construction, and attractive design.
+            हमारी हर परियोजना में आधुनिक तकनीक, मजबूत निर्माण और आकर्षक डिजाइन का सही संयोजन होता है।
           </p>
 
           <a href="#projects" className="inline-flex items-center gap-2 pb-2 border-b-2 border-primary text-primary font-medium hover:text-accent hover:border-accent transition-colors group">
-            View Our Projects
+            हमारे प्रोजेक्ट्स देखें
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>

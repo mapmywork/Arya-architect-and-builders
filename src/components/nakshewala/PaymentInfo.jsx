@@ -19,11 +19,11 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
         <div className="flex flex-col items-center text-center mb-8">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="w-8 h-[2px] bg-accent"></div>
-            <span className="text-accent font-medium tracking-widest uppercase text-xs">Secure Payment</span>
+            <span className="text-accent font-medium tracking-widest uppercase text-xs">सुरक्षित भुगतान</span>
             <div className="w-8 h-[2px] bg-accent"></div>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
-            Payment <span className="text-secondary font-light italic">Details</span>
+            भुगतान <span className="text-secondary font-light italic">विवरण</span>
           </h2>
         </div>
 
@@ -42,15 +42,15 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
                 <Wallet size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-heading font-bold text-primary">UPI Payment</h3>
-                <p className="text-secondary text-xs">Fast and Secure</p>
+                <h3 className="text-lg font-heading font-bold text-primary">UPI भुगतान</h3>
+                <p className="text-secondary text-xs">तेज़ और सुरक्षित</p>
               </div>
             </div>
 
             <div className="space-y-4 mb-6">
               {amount > 0 && (
                 <div className="bg-background rounded-xl p-3 border border-black/5">
-                  <p className="text-xs text-secondary mb-1">Amount to Pay</p>
+                  <p className="text-xs text-secondary mb-1">भुगतान की जाने वाली राशि</p>
                   <p className="font-mono text-2xl font-bold text-accent">₹{amount.toLocaleString()}</p>
                 </div>
               )}
@@ -59,7 +59,7 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
                 <p className="font-mono text-base font-bold text-primary">9179868594@ybl</p>
               </div>
               <div className="bg-background rounded-xl p-3 border border-black/5">
-                <p className="text-xs text-secondary mb-1">Bank Account Name</p>
+                <p className="text-xs text-secondary mb-1">बैंक खाता नाम</p>
                 <p className="font-heading text-sm font-bold text-primary">SAHAYATA SUTRAKAR</p>
               </div>
             </div>
@@ -67,7 +67,7 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-start gap-2">
               <AlertCircle size={16} className="text-amber-500 shrink-0 mt-0.5" />
               <p className="text-xs text-amber-800 leading-relaxed font-medium">
-                Note: If UPI payment fails, please use the QR code or pay to the number.
+                नोट: यदि UPI भुगतान विफल रहता है, तो कृपया QR कोड का उपयोग करें या नंबर पर भुगतान करें।
               </p>
             </div>
           </motion.div>
@@ -87,14 +87,14 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
               />
             </div>
 
-            <a href={`https://wa.me/9179868594?text=I%20have%20made%20the%20payment${amount ? `%20of%20₹${amount}` : ''},%20here%20is%20the%20screenshot.`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
+            <a href={`https://wa.me/9179868594?text=${encodeURIComponent('मैंने भुगतान कर दिया है')}${amount ? encodeURIComponent(`, राशि: ₹${amount}`) : ''}${encodeURIComponent(', यह स्क्रीनशॉट है।')}`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
               <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
-              Send Screenshot on WhatsApp
+              WhatsApp पर स्क्रीनशॉट भेजें
             </a>
 
             <button className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-white text-primary border-2 border-primary/10 rounded-2xl font-bold text-base hover:border-primary transition-colors group mt-2">
               <Send size={20} className="text-accent group-hover:-translate-y-1 transition-transform" />
-              Submit Details
+              विवरण सबमिट करें
             </button>
           </motion.div>
         </div>

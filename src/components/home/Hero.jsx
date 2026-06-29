@@ -34,19 +34,19 @@ const Hero = () => {
               />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-heading font-bold mb-4 tracking-wide">
-              ARYA ARCHITECT & BUILDER
+              आर्या आर्किटेक्ट एंड बिल्डर
             </h1>
             <h2 className="text-2xl md:text-3xl text-accent font-medium mb-6">
-              Professional Civil Engineering Services
+              पेशेवर सिविल इंजीनियरिंग सेवाएं
             </h2>
             <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-10 font-light leading-relaxed text-balance">
-              2D Floor Plan &bull; Plotting Plan &bull; Roof Plan &bull; Estimate &bull; Structural Drawing &bull; 3D Front Elevation &bull; 3D Floor Plan &bull; Interior Design &bull; Site Visit
+              2D फ्लोर प्लान &bull; प्लॉटिंग प्लान &bull; रूफ प्लान &bull; एस्टीमेट &bull; स्ट्रक्चरल ड्रॉइंग &bull; 3D फ्रंट एलिवेशन &bull; 3D फ्लोर प्लान &bull; इंटीरियर डिजाइन &bull; साइट विजिट
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
               <a href="tel:+919179868594" className="px-8 py-4 bg-accent text-primary rounded-xl font-bold hover:bg-white transition-all duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                Call Now
+                अभी कॉल करें
               </a>
               <a href="https://wa.me/9179868594" target="_blank" rel="noreferrer" className="px-8 py-4 bg-accent text-primary rounded-xl font-bold hover:bg-white transition-all duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
@@ -75,7 +75,7 @@ const Hero = () => {
                       <CountUp end={500} duration={3} enableScrollSpy />+
                     </span>
                   </div>
-                  <p className="text-white/60 text-sm font-medium">Projects Designed</p>
+                  <p className="text-white/60 text-sm font-medium">डिज़ाइन किए गए प्रोजेक्ट्स</p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 text-accent mb-2">
@@ -84,7 +84,7 @@ const Hero = () => {
                       <CountUp end={150} duration={3} enableScrollSpy />+
                     </span>
                   </div>
-                  <p className="text-white/60 text-sm font-medium">Happy Clients</p>
+                  <p className="text-white/60 text-sm font-medium">संतुष्ट ग्राहक</p>
                 </div>
               </div>
 
@@ -94,9 +94,9 @@ const Hero = () => {
                 <div>
                   <div className="flex items-center gap-2 text-white mb-1">
                     <MapPin size={16} className="text-accent" />
-                    <span className="font-medium">Panna, MP</span>
+                    <span className="font-medium">पन्ना, एम.पी.</span>
                   </div>
-                  <p className="text-white/60 text-sm">10+ Years Experience</p>
+                  <p className="text-white/60 text-sm">10+ वर्षों का अनुभव</p>
                 </div>
                 <a href="#contact" className="h-12 w-12 bg-white text-primary rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
                   <ArrowRight size={20} />
