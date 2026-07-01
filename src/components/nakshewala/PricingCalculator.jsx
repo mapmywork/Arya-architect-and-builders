@@ -23,15 +23,18 @@ const PricingCalculator = () => {
   const handleToggle = (id) => {
     setSelectedServices(prev => ({
       ...prev,
-      [id]: prev[id] ? undefined : { quantity: 0 }
+      [id]: prev[id] ? undefined : { quantity: '' }
     }))
   }
 
   const handleQuantityChange = (id, quantity) => {
-    if (quantity === '' || quantity < 0) quantity = 0
+    let newQuantity = quantity === '' ? '' : parseInt(quantity, 10);
+    if (newQuantity !== '' && isNaN(newQuantity)) newQuantity = '';
+    if (newQuantity !== '' && newQuantity < 0) newQuantity = 0;
+    
     setSelectedServices(prev => ({
       ...prev,
-      [id]: { quantity: parseInt(quantity) }
+      [id]: { quantity: newQuantity }
     }))
   }
 
@@ -39,7 +42,8 @@ const PricingCalculator = () => {
     let total = 0
     services.forEach(service => {
       if (selectedServices[service.id]) {
-        total += service.price * (service.unit === 'flat' ? 1 : selectedServices[service.id].quantity)
+        const qty = selectedServices[service.id].quantity || 0;
+        total += service.price * (service.unit === 'flat' ? 1 : qty)
       }
     })
     return total
