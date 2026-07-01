@@ -1,8 +1,8 @@
 import { MessageCircle, Phone } from 'lucide-react';
 
 const FloatingButtons = () => {
-  const whatsappNumber = '919876543210'; // Replace with actual number
-  const phoneNumber = '+919876543210'; // Replace with actual number
+  const whatsappNumber = '919232660441'; // Replace with actual number
+  const phoneNumber = '+919232660441'; // Replace with actual number
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">

@@ -87,7 +87,7 @@ const PaymentInfo = ({ isOpen, onClose, amount }) => {
               />
             </div>
 
-            <a href={`https://wa.me/9179868594?text=${encodeURIComponent('मैंने भुगतान कर दिया है')}${amount ? encodeURIComponent(`, राशि: ₹${amount}`) : ''}${encodeURIComponent(', यह स्क्रीनशॉट है।')}`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
+            <a href={`https://wa.me/919232660441?text=${encodeURIComponent('मैंने भुगतान कर दिया है')}${amount ? encodeURIComponent(`, राशि: ₹${amount}`) : ''}${encodeURIComponent(', यह स्क्रीनशॉट है।')}`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#25D366]/10 text-[#25D366] border-2 border-[#25D366]/30 rounded-2xl font-bold text-base hover:bg-[#25D366] hover:text-white transition-colors group">
               <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
               WhatsApp पर स्क्रीनशॉट भेजें
             </a>

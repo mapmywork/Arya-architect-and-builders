@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-lg font-heading font-semibold mb-1">फ़ोन नंबर</h4>
-                <a href="tel:+917974768589" className="text-white/60 hover:text-accent transition-colors">7974768589</a>
+                <a href="tel:+919232660441" className="text-white/60 hover:text-accent transition-colors">9232660441</a>
               </div>
             </div>
 
@@ -109,12 +109,12 @@ const Contact = () => {
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-accent transition-colors resize-none"
               ></textarea>
               
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-col gap-4">
                 <button type="submit" className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-accent text-white rounded-xl font-medium hover:bg-white hover:text-primary transition-all duration-300">
                   <Send size={18} />
                   सबमिट करें
                 </button>
-                <a href="https://wa.me/917974768589" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 px-6 py-4 bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30 rounded-xl font-medium hover:bg-[#25D366] hover:text-white transition-all duration-300">
+                <a href="https://wa.me/919232660441" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 px-6 py-4 bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30 rounded-xl font-medium hover:bg-[#25D366] hover:text-white transition-all duration-300">
                   <MessageCircle size={18} />
                   WhatsApp
                 </a>

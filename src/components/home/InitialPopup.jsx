@@ -34,7 +34,7 @@ const InitialPopup = () => {
     }
 
     const message = `नमस्ते, मेरा नाम ${formData.name} है।\nमोबाइल: ${formData.mobile}\nपता: ${formData.address}\nकृपया मुझसे संपर्क करें।`;
-    const whatsappNumber = '919876543210'; // Replace with actual number
+    const whatsappNumber = '919232660441'; // Replace with actual number
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');

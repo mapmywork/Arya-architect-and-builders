@@ -58,13 +58,13 @@ const Navbar = () => {
         {/* Right CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+917974768589"
+            href="tel:+919232660441"
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               isScrolled ? 'text-primary hover:text-accent' : 'text-white hover:text-accent'
             }`}
           >
             <Phone size={16} />
-            <span>7974768589</span>
+            <span>9232660441</span>
           </a>
           <a
             href="#contact"
