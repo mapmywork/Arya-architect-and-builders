@@ -5,7 +5,7 @@ const engineers = [
   { name: 'Er. Swati Sahu', role: 'आर्किटेक्ट', phone: '78987 95031' },
   { name: 'Er. Shivam Athiya', role: 'सिविल इंजी. विशेषज्ञ', phone: '83191 03175' },
   { name: 'Er. Jubair Khan', role: 'तकनीकी विशेषज्ञ', phone: '80857 86182' },
-  { name: 'Er. Sahayata Sutrakar', role: 'आर्किटेक्ट', phone: '91798 68594' }
+  { name: 'Er. Sahayata Sutrakar', role: 'आर्किटेक्ट', phone: '92326 60441' }
 ]
 
 const Engineers = () => {
