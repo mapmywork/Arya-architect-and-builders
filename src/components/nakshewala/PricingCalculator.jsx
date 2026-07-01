@@ -23,12 +23,12 @@ const PricingCalculator = () => {
   const handleToggle = (id) => {
     setSelectedServices(prev => ({
       ...prev,
-      [id]: prev[id] ? undefined : { quantity: 1 }
+      [id]: prev[id] ? undefined : { quantity: 0 }
     }))
   }
 
   const handleQuantityChange = (id, quantity) => {
-    if (!quantity || quantity < 1) quantity = 1
+    if (quantity === '' || quantity < 0) quantity = 0
     setSelectedServices(prev => ({
       ...prev,
       [id]: { quantity: parseInt(quantity) }
@@ -84,7 +84,7 @@ const PricingCalculator = () => {
                       <label className="text-sm text-white/60">क्षेत्रफल दर्ज करें ({service.unit === 'sqft' ? 'वर्ग फुट' : service.unit === 'acre' ? 'एकड़' : service.unit}):</label>
                       <input 
                         type="number" 
-                        min="1"
+                        min="0"
                         value={selectedServices[service.id].quantity}
                         onChange={(e) => handleQuantityChange(service.id, e.target.value)}
                         className="w-24 bg-background/50 border border-white/20 rounded-lg px-3 py-1 text-right text-white focus:outline-none focus:border-accent"
